@@ -408,7 +408,7 @@ private object GeminiClient {
         var connection: HttpURLConnection? = null
         return try {
             val url = URL(
-                "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=$apiKey"
+                "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key=$apiKey"
             )
             connection = (url.openConnection() as HttpURLConnection).apply {
                 requestMethod = "POST"
